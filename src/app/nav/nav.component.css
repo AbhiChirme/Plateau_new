@@ -10,6 +10,12 @@
         background-size: 100%;
       
 }
-.navbar{
+.nav-link{
+        color: red;
+}
+.nav-link:hover{
+        color: white;
+}
+.navbar {
         background-color: black;
 }
