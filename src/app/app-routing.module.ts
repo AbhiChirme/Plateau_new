@@ -6,6 +6,10 @@ import { AfficheSerieComponent } from './affiche-serie/affiche-serie.component';
 import { DetailFilmComponent } from './detail-film/detail-film.component';
 import { DetailSerieComponent } from './detail-serie/detail-serie.component';
 import { SearchComponent } from './search/search.component';
+import { LatestComponent } from './latest/latest.component';
+import { MyListComponent } from './my-list/my-list.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 const routes: Routes = [
@@ -14,7 +18,11 @@ const routes: Routes = [
   {path:'series', component:AfficheSerieComponent},
   {path:'detailfilm/:id', component:DetailFilmComponent},
   {path:'detailserie/:id', component:DetailSerieComponent},
-  {path:'search/:find', component:SearchComponent}
+  {path:'search/:find', component:SearchComponent},
+  {path:'latest', component: LatestComponent},
+  {path:'mylist', component: MyListComponent},
+  {path:'signin', component:SigninComponent},
+  {path:'signup', component:SignupComponent}
 ];
 
 @NgModule({

@@ -15,10 +15,10 @@
         <a class="nav-link" [routerLink]="['/series']" routerLinkActive="active">Series</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  [routerLink]="['/series']" routerLinkActive="active">Latest</a>
+        <a class="nav-link"  [routerLink]="['/latest']" routerLinkActive="active">Latest</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/MyList']" routerLinkActive="active">My List </a>
+        <a class="nav-link" [routerLink]="['/mylist']" routerLinkActive="active">My List </a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" (ngSubmit)="onSubmit(f)" #f="ngForm">
@@ -26,7 +26,7 @@
       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
     </form>
     <form class="form-inline my-2 my-lg-0 pl-2">
-      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SignIn</button>
+      <button class="btn btn-outline-danger my-2 my-sm-0" (click)="onClick()" type="submit">SignIn</button>
     </form>
   </div>
 </nav>

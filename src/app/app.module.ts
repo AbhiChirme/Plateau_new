@@ -13,6 +13,8 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { LatestComponent } from './latest/latest.component';
 import { MyListComponent } from './my-list/my-list.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { MyListComponent } from './my-list/my-list.component';
     DetailSerieComponent,
     SearchComponent,
     LatestComponent,
-    MyListComponent
+    MyListComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

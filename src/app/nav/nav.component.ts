@@ -22,5 +22,8 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
   }
+  onClick(){
+    this.router.navigate(['signin']);
+  }
 
 }
