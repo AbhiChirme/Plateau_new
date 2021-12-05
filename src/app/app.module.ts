@@ -11,6 +11,10 @@ import { DetailFilmComponent } from './detail-film/detail-film.component';
 import { DetailSerieComponent } from './detail-serie/detail-serie.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { LatestComponent } from './latest/latest.component';
+import { MyListComponent } from './my-list/my-list.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     DetailFilmComponent,
     DetailSerieComponent,
-    SearchComponent
+    SearchComponent,
+    LatestComponent,
+    MyListComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

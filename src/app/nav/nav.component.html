@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand " [routerLink]="['/']">
     <img id = "no-background"src="https://lettersandnumbers.org/freealphabetletters/black/alphabet_letter_p.jpg" width="100" height="50" alt="">
   </a>
@@ -14,10 +14,19 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/series']" routerLinkActive="active">Series</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link"  [routerLink]="['/latest']" routerLinkActive="active">Latest</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/mylist']" routerLinkActive="active">My List </a>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" (ngSubmit)="onSubmit(f)" #f="ngForm">
       <input class="form-control mr-sm-2" type="search" placeholder="Ex: Mind Hunter" aria-label="Search" name="search" [ngModel]="search">
       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <form class="form-inline my-2 my-lg-0 pl-2">
+      <button class="btn btn-outline-danger my-2 my-sm-0" (click)="onClick()" type="submit">SignIn</button>
     </form>
   </div>
 </nav>
